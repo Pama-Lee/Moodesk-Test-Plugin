@@ -23,10 +23,7 @@
       }
     ],
     "css": [
-      "styles/main.css"
-    ],
-    "assets": [
-      "assets/icon.png"
+      "src/styles/main.css"
     ]
   },
 
