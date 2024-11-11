@@ -26,12 +26,6 @@
       "src/styles/main.css"
     ]
   },
-
-  "dependencies": {
-    "required": ["core"],
-    "optional": ["pdf-viewer"]
-  },
-
   "config": {
     "loadOrder": "sequential",
     "autoLoad": true
