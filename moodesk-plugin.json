@@ -1,0 +1,10 @@
+// moodesk-plugin.json
+{
+  "id": "unique-plugin-id",
+  "name": "Plugin Name",
+  "version": "1.0.0",
+  "description": "Plugin description",
+  "author": "Your Name",
+  "permissions": ["storage", "notifications"],
+  "hooks": ["onPageLoad", "onTodoAdd"]
+}
