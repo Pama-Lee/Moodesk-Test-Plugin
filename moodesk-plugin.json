@@ -1,9 +1,42 @@
 {
-  "id": "unique-plugin-id",
-  "name": "Plugin Name",
+  "id": "moodesk-hello-world",
+  "name": "Hello World Plugin",
   "version": "1.0.0",
-  "description": "Plugin description",
+  "description": "A simple hello world plugin for Moodesk",
   "author": "Your Name",
-  "permissions": ["storage", "notifications"],
-  "hooks": ["onPageLoad", "onTodoAdd"]
+  "permissions": [],
+  "hooks": ["onInit"],
+  
+  "files": {
+    "js": [
+      {
+        "path": "src/index.js",
+        "type": "main"
+      },
+      {
+        "path": "src/utils/helper.js",
+        "type": "module"
+      },
+      {
+        "path": "src/components/ui.js",
+        "type": "module"
+      }
+    ],
+    "css": [
+      "styles/main.css"
+    ],
+    "assets": [
+      "assets/icon.png"
+    ]
+  },
+
+  "dependencies": {
+    "required": ["core"],
+    "optional": ["pdf-viewer"]
+  },
+
+  "config": {
+    "loadOrder": "sequential",
+    "autoLoad": true
+  }
 }
